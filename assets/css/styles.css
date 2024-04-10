@@ -28,9 +28,10 @@ header {
 }
 
 .logoImg {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: #b28756;
+    transform: rotate(50deg)
 }
 
 .menu {
@@ -56,7 +57,67 @@ header {
 }
 
 .menu li a:hover,
-.menu .active a
-{
+.menu .active a {
     border-bottom: 5px solid #b28756;
+    color: #CCC;
+}
+
+.banner {
+    background-color: #333;
+    height: calc(100vh - 100px);
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner .sliders {
+    width: 100vw;
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slidearea {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner .slidearea h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner .slidearea span {
+    color: #b28756;
+}
+
+.banner .slidearea h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner .slidearea a {
+    display: block;
+    background-color: #b28756;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.banner .slidearea a:hover {
+    background-color: #957047;
 }
